@@ -175,7 +175,22 @@
 
     </div>
     <div class="fond-blanc">
-
+      <br>
+      <h2>RETROUVEZ LES MARQUES SUR LEURS STANDS</h2>
+      <br>
+      <div class="liste-marques">
+      <ul>
+        <li><div class="number">1 </div>Honda</li>
+        <li><div class="number">2 </div>Alpine</li>
+        <li><div class="number">3 </div>Audi</li>
+        <li><div class="number">4 </div>Citroen</li>
+        <li><div class="number">5 </div>Maserati</li>
+        <li><div class="number">6 </div>Mercedes Benz</li>
+        <li><div class="number">7 </div>Opel</li>
+        <li><div class="number">8 </div>Peugeot</li>
+        <li><div class="number">9</div>Volkswagon</li>
+      </ul>
+      </div>
     </div>
     <div class="boutton-partenaires-2 ">
       <a href="#">VOIR PLUS</a>
@@ -195,6 +210,24 @@
 
 
 <style>
+  .number {
+    border: 1px red black;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .liste-marques {
+    text-align: left;
+  }
+
+  .liste-marques ul {
+    list-style-type: none;
+  }
   .stands-marques {
     margin: 75px 100px 0px 100px;
   }
@@ -207,27 +240,31 @@
   .fond-blanc {
     z-index: 1;
     background-color: white;
-    height: 301px;
+    height: 349px;
     opacity: 1;
     width: 587px;
     position: relative;
     left: 49px;
-    top: -119px;
+    top: -250px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 
   }
 
+  .fond-blanc h2 {
+    margin: 0 30px;
+    padding: 0;
+  }
+
   .fond-rouge {
     z-index: 1;
     background-color: red;
-    height: 166px;
+    height: 250px;
     opacity: 0.5;
     width: 587px;
     position: relative;
     left: 123px;
-    top: 48px;
-
+    top: 0px;
   }
 
   .boutton-partenaires-2 {
@@ -239,7 +276,7 @@
     padding: 20px 0;
     width: 240px;
     left: 470px;
-    top: -118px;
+    top: -250px;
     position: relative;
   }
 
