@@ -8,4 +8,4 @@ gem 'materialize-sass'
 gem 'bootstrap-sass'
 gem 'font-awesome-middleman'
 
-
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
