@@ -143,7 +143,7 @@
 }
 </style>
 
-<div class="banner" >
+<div class="banner" id="#bannerid">
   <div class="banner-content">
     <div class="row">
       <div class="col-sm-6">
@@ -164,7 +164,7 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="fond-rouge-banner">
+        <div class="fond-rouge-banner-deskop">
 
         </div>
       </div>
@@ -184,6 +184,8 @@
 </div>
 
 <style>
+
+/* deskop */
 
 .fond-blanc-banner {
   padding-left: 27px;
@@ -205,7 +207,7 @@
   position: relative;
 }
 
-.fond-rouge-banner {
+.fond-rouge-banner-deskop {
     position: relative;
     background-color: #C72832;
     height: 600px;
@@ -252,7 +254,45 @@
 .en-savoir-plus-button a {
   text-decoration: none;
   color: white;
+
+
+
 }
+
+/* mobile */
+@media (max-width: 500px) {
+.fond-rouge-banner-deskop {
+  display: none;
+}
+
+.boutton-partenaires {
+  display: none;
+}
+
+.image-banner img {
+  height: 235px;
+}
+
+.fond-blanc-banner {
+ display: none;
+}
+
+.texte-fond-blanc-banner h4 {
+ display: none;
+}
+.fond-rouge-banner-deskop {
+ display: none;
+}
+
+.rouge-transparent-banner {
+ display: none;
+}
+
+.fond-blanc-banner {
+ display: none;
+}
+}
+
 </style>
 
 <div class="presentation">
@@ -268,6 +308,12 @@
 .texte-presentation {
   margin: -627px 200px 75px 200px;
 }
+@media (max-width: 500px) {
+  .texte-presentation {
+  margin: 75px 5px 75px 5px;
+}
+}
+
 </style>
 
 <div class="partenaires text-center">
@@ -279,6 +325,32 @@
 
       <div class="card-garage text-center">
         <div class="card-image-garage text-center">
+          <img src="images/logo_ Renault.png" height="100px">
+        </div>
+
+      </div>
+
+
+
+<style>
+  .card-garage {
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-image-garage {
+    padding: 10px;
+  }
+</style>
+
+    </div>
+    <div class="col-sm-2 col-xs-12">
+
+
+
+
+      <div class="card-garage">
+        <div class="card-image-garage">
           <img src="images/logo-Nissan.png" height="100px">
         </div>
 
@@ -294,7 +366,16 @@
 
   .card-image-garage {
     padding: 10px;
+
   }
+@media (max-width: 500px) {
+    .card-image-garage {
+   margin-bottom: 20px;
+
+  }
+
+}
+
 </style>
 
     </div>
@@ -305,7 +386,7 @@
 
       <div class="card-garage">
         <div class="card-image-garage">
-          <img src="images/logo-citroen.png" height="100px">
+          <img src="images/logo-Mercedes.png" height="100px">
         </div>
 
       </div>
@@ -331,7 +412,7 @@
 
       <div class="card-garage">
         <div class="card-image-garage">
-          <img src="images/Nissan.png" height="100px">
+          <img src="images/Logo-honda.jpg" height="100px">
         </div>
 
       </div>
@@ -357,33 +438,7 @@
 
       <div class="card-garage">
         <div class="card-image-garage">
-          <img src="images/Mercedes.png" height="100px">
-        </div>
-
-      </div>
-
-
-
-<style>
-  .card-garage {
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-  }
-
-  .card-image-garage {
-    padding: 10px;
-  }
-</style>
-
-    </div>
-    <div class="col-sm-2 col-xs-12">
-
-
-
-
-      <div class="card-garage">
-        <div class="card-image-garage">
-          <img src="images/Mazda-logo.png" height="100px">
+          <img src="images/logo-Opel.png" height="100px">
         </div>
 
       </div>
@@ -426,7 +481,7 @@
   .boutton-partenaires {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    background-color: rgb(0, 0, 123);
+    background-color: #0A3E59;
     color: #ffffff;
     padding: 10px 0;
   }
@@ -439,14 +494,14 @@
 
 <div class="pictos-avantages">
   <div class="row text-center">
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
     <div class="content-blue">
     <i class="fas fa-car fa-4x"></i>
     <h2>29</h2>
     <p>Marques automobiles</p>
     </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
     <div class="content-blue">
     <i class="far fa-smile fa-4x"></i>
     <h2>+110</h2>
@@ -454,7 +509,7 @@
     </div>
     </div>
     <div class="content-blue">
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
     <i class="fas fa-map-marked-alt fa-4x"></i>
     <h2>21</h2>
     <p>Hectares paysagés</p>
@@ -469,7 +524,7 @@
 
   }
   .content-blue {
-    color: rgb(0, 0, 123);
+    color: #0A3E59;
   }
 
   .content-blue h2 {
@@ -477,7 +532,7 @@
 
   text-decoration: none;
   box-shadow: inset 0 -14px 0 red;
-  -webkit-box-shadow: inset 0 -14px 0 red;
+  -webkit-box-shadow: inset 0 -14px 0 #C72832 ;
   -webkit-transition: background .2s ease;
   transition: background .2s ease;
   height: 35px;
@@ -488,6 +543,8 @@
     color: black;
     opacity: 0.30;
   }
+
+
 
 </style>
 
@@ -527,15 +584,21 @@
       <img src="images/Visuel_Plan.png" alt="">
     </div>
 </div>
-
+  <div class="image-mobile">
+    <img src="images/basdepage.png" alt="" height="200">
+  </div>
   </div>
 </div>
 
 
 <style>
+
+  .image-mobile {
+    display: none;
+  }
   .number {
     border: 1px red black;
-    background-color: red;
+    background-color: #C72832 ;
     color: #ffffff;
     border-radius: 50%;
     display: inline-block;
@@ -581,7 +644,7 @@
 
   .fond-rouge {
     z-index: 1;
-    background-color: red;
+    background-color: #C72832 ;
     height: 250px;
     opacity: 0.5;
     width: 587px;
@@ -594,7 +657,7 @@
     z-index: 1;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    background-color: rgb(0, 0, 123);
+    background-color: #0A3E59 ;
     color: #ffffff;
     padding: 20px 0;
     width: 240px;
@@ -606,14 +669,55 @@
   .boutton-partenaires-2 a {
         color: #ffffff;
     text-decoration: none;
+
+
+
+
   }
+
+
+  @media (max-width: 500px) {
+
+    .boutton-partenaires-2 {
+      display: none;
+    }
+    .fond-blanc {
+      display: none;
+    }
+
+     .fond-rouge {
+      display: none;
+     }
+    .boutton-partenaires-2 {
+    left: 0px;
+    top: 0px;
+    }
+    .image-golf {
+      float: left;
+    }
+    .image-golf img {
+      height: 250px;
+      float: left;
+    }
+
+    .image-mobile {
+      display: block;
+    }
+
+    .stands-marques {
+      display: none;
+    }
+  }
+
 </style>
 <div class="row">
+<a href="index.html#bannerid">
 <div class="retour-en-haut">
 <div class="fleche">
 <i class="fas fa-arrow-up fa-3x"></i>
 </div>
 </div>
+</a>
 </div>
 
 
@@ -655,7 +759,7 @@
     height: 100px;
     width: 100px;
     float: right;
-    background-color: red;
+    background-color: #C72832;
     vertical-align: middle;
   }
 
@@ -672,9 +776,8 @@
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  padding: 0px 50px;
+  padding: 0px 150px;
   color: #ffffff;
-  width: 100%;
 }
 .footer-links {
   text-decoration: none;
