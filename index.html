@@ -261,6 +261,10 @@
 
 /* mobile */
 @media (max-width: 500px) {
+
+.en-savoir-plus-button {
+  display: none;
+}
 .fond-rouge-banner-deskop {
   display: none;
 }
@@ -577,17 +581,18 @@
     </div>
 
   </div>
+    <div class="image-mobile text-center">
+    <img src="images/basdepage.png" alt="" height="250">
+  </div>
 
-
-<div class="col-sm-6">
+<div class="col-sm-6 col-xs-12">
     <div class="image-golf" style="vertical-align: middle;">
       <img src="images/Visuel_Plan.png" alt="">
     </div>
 </div>
-  <div class="image-mobile">
-    <img src="images/basdepage.png" alt="" height="200">
+
   </div>
-  </div>
+
 </div>
 
 
@@ -670,13 +675,14 @@
         color: #ffffff;
     text-decoration: none;
 
-
-
-
   }
 
-
   @media (max-width: 500px) {
+
+      .stands-marques {
+    margin: 0px 0px 0px 0px;
+  }
+
 
     .boutton-partenaires-2 {
       display: none;
@@ -692,21 +698,15 @@
     left: 0px;
     top: 0px;
     }
-    .image-golf {
-      float: left;
-    }
     .image-golf img {
-      height: 250px;
-      float: left;
+      height: 200px;
     }
 
     .image-mobile {
       display: block;
     }
 
-    .stands-marques {
-      display: none;
-    }
+
   }
 
 </style>
