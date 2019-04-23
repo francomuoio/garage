@@ -33,10 +33,11 @@
     <div class="navbar-wagon-item">
       <div class="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="index.html">ACCUEIL</a></li>
-          <li><a href="partenaires.html"></a>PARTENAIRES</li>
-          <li><a href="programme.html">INFOS PRATIQUES</a></li>
-          <li><a href="contact.html">CONTACTS</a></li>
+          <li><a href="index.html" class="navbar-wagon-item navbar-wagon-link">ACCUEIL</a>
+></li>
+          <li><a href="partenaires.html" class="navbar-wagon-item navbar-wagon-link">PARTENAIRES</li>
+          <li><a href="programme.html" class="navbar-wagon-item navbar-wagon-link">INFOS PRATIQUES</a></li>
+          <li><a href="contact.html" class="navbar-wagon-item navbar-wagon-link">CONTACTS</a></li>
         </ul>
       </div>
     </div>
@@ -47,9 +48,11 @@
     <div class="dropdown">
       <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+         <li><a href="index.html" class="navbar-wagon-item navbar-wagon-link">ACCUEIL</a>
+></li>
+          <li><a href="partenaires.html" class="navbar-wagon-item navbar-wagon-link">PARTENAIRES</li>
+          <li><a href="programme.html" class="navbar-wagon-item navbar-wagon-link">INFOS PRATIQUES</a></li>
+          <li><a href="contact.html" class="navbar-wagon-item navbar-wagon-link">CONTACTS</a></li>
       </ul>
     </div>
   </div>
@@ -198,6 +201,52 @@ Avenue du Phare du Grand Jardin, 35520 Melesse</p>
     background-color: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   }
+
+@media (max-width: 500px) {
+  .intro-partenaires {
+  position: relative;
+  z-index: 1;
+  bottom: 20px;
+  /* bottom: 51px; */
+  /* margin-bottom: -11px; */
+  margin: auto;
+  width: 353px;
+  height: 108px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+
+  .carre-essai {
+  float: right;
+  padding-left: 1px;
+  height: 146px;
+  }
+  .carre-reservation {
+  float: left;
+  padding-left: 1px;
+  height: 272px;
+  }
+  .carre-golf {
+  float: right;
+  padding-left: 1px;
+  height: 154px;
+  }
+  .carre-reservation2 {
+  float: left;
+  padding-left: 1px;
+  height: 143px;
+  }
+  .carre-restauration {
+  float: right;
+  padding-left: 1px;
+  height: 157px;
+  }
+  .texte-programme {
+  margin: 0px 25px!important;
+  }
+}
+
+
 </style>
 
 
@@ -289,7 +338,7 @@ Vous êtes golfeur, nos partenaires Callaway et Eurogolf Rennes vous invitent à
 <div class="row">
 <div class="col-sm-12">
 
-  <img src="images/enfant.png" alt="" class="ombre-image carre-reservation" >
+  <img src="images/enfant.png" alt="" class="ombre-image carre-reservation2" >
   </a>
 
 </div>
@@ -483,7 +532,6 @@ Vous êtes golfeur, nos partenaires Callaway et Eurogolf Rennes vous invitent à
 </div>
 </div>
 
-
 <div class="row">
 <div class="footer">
 
@@ -511,7 +559,7 @@ Vous êtes golfeur, nos partenaires Callaway et Eurogolf Rennes vous invitent à
       <p>Avenue du Phare du Grand Jardin</p>
       <p>35520 MELESSE</p>
       <div class="boutton-contact text-center">
-        CONTACT
+        <a href="contact.html">CONTACT</a>
       </div>
     </div>
 
@@ -522,7 +570,7 @@ Vous êtes golfeur, nos partenaires Callaway et Eurogolf Rennes vous invitent à
     height: 100px;
     width: 100px;
     float: right;
-    background-color: red;
+    background-color: #C72832;
     vertical-align: middle;
   }
 
@@ -539,38 +587,50 @@ Vous êtes golfeur, nos partenaires Callaway et Eurogolf Rennes vous invitent à
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  padding: 0px 50px;
+  padding: 0px 150px;
   color: #ffffff;
-  width: 101%;
-}
-.footer-links {
-  text-decoration: none;
-  color: #ffffff;
-  display: flex;
+  }
+  .footer-links {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+
+  .pages1 a {
+    color: #ffffff!important;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+
+  .boutton-contact {
+    background-color: red;
+    padding: 10px 0;
+  }
+
+    @media (max-width: 500px) {
+
+        .footer {
+          text-align: center;
+  background: #0A3E59;
+  display: block;
   align-items: center;
-}
-.footer-links a {
+  justify-content: space-between;
+  height: 400px;
+  padding: 20px 50px;
   color: #ffffff;
-
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-
-.pages1 a {
-  color: #ffffff!important;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
-}
-
-.boutton-contact {
-  background-color: red;
-  padding: 10px 0;
-}
+  }
 </style>
 
   </body>
