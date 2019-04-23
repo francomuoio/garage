@@ -218,11 +218,9 @@
     <div class="google-map-deskop">
     <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=avenue%20du%20phare%20du%20grnd%20jardin%20melesse&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">Pure Black GmbH</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
     </div>
-    <div class="google-map-mobile">
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=avenue%20du%20phare%20du%20grnd%20jardin%20melesse&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">Pure Black GmbH</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+
     </div>
-    </div>
-  </div>
+
   <div class="col-sm-6 formulaire-contact">
     <br><br>
     <div class="row">
@@ -298,37 +296,29 @@
 
   </div>
 </div>
-
+ </div>
 
 <style>
-      .google-map-mobile {
-        display: none;
+
+    @media (max-width: 500px) {
+
+
+      .gmap_canvas {
+      overflow: hidden;
+      background: none!important;
+      height: 500px;
+      width: 361px!important;
       }
-      @media (max-width: 500px) {
-
-
-        .google-map-mobile {
-          display: block;
-          text-align: left;
-        }
-
-        .google-map-deskop {
-          display: none;
-        }
-        .gmap_canvas {
-    overflow: hidden;
-    background: none!important;
-    height: 500px;
-        width: 361px!important;
-}
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 500px;
-    width: 388px;
-}
+      .mapouter {
+      position: relative;
+      text-align: right;
+      height: 500px;
+      width: 388px;
       }
+    }
 </style>
+
+
 <br><br>
 <div class="row">
  <div class="pages-partenaires text-center">
